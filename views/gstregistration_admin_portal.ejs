@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/5096c7feb4.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title>Admin Portal</title>
+  <link rel="stylesheet" href="css/whoweare.css">
+</head>
+<body>
+  <header>
+    <div class="dropdown">
+        <nav>
+            <label for="btn" class="icon">
+                <span class="fa fa-bars"></span>
+            </label><a href="/">
+            <img class="logo" src="/photos/LOGO.jpeg">
+            </a>
+            <input type="checkbox" id="btn">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/admin/admin_portal/gstregistrationform">GST Registration</a></li>
+                <li><a href="/admin/admin_portal/gstreturnform">GST Return</a></li>
+                <li><a href="/admin/admin_portal/newsletter">Newsletter</a></li>
+                <li><a href="/admin/admin_portal/contact_page">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+
+  <section class="main-part-admin-portal" style="margin-top: 3%;">
+    <div>
+        <h2 style="text-align: center; margin-bottom: 2%;">GST Registration</h2>
+      </div>
+      <div class="row">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Business Name</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>Zipcode</th>
+                    <th>State</th>
+                    <th>Filling Type</th>
+                    <th>No. of Invoices</th>
+                </tr>
+            </thead>
+            
+            <%if (result.length >0){ %>
+                <% result.forEach(function(row){ %>
+                <tr>
+                  <td><%= row.name %></td>
+                  <td><%= row.email %></td>
+                  <td><%= row.phone %></td>
+                  <td><%= row.businessname %></td>
+                  <td><%= row.address %></td>
+                  <td><%= row.city %></td>
+                  <td><%= row.zipcode %></td>
+                  <td><%= row.state %></td>
+                  <td><%= row.fillingtype %></td>
+                  <td><%= row.numberofinvoices %></td>
+                </tr>
+                <% })}else{ %>
+                <tr>
+                  <td colspan="6">No Record Found</td>
+                </tr>
+              <% } %>
+        </table>
+      </div>
+  </section>
+</body>
+</html>

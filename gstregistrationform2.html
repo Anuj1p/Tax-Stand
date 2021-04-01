@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/5096c7feb4.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title>GST Return Form</title>
+  <link rel="stylesheet" href="css/whoweare.css">
+</head>
+<body>
+  <header>
+    <div class="dropdown">
+        <nav>
+            <label for="btn" class="icon">
+                <span class="fa fa-bars"></span>
+            </label><a href="/">
+            <img class="logo" src="/photos/LOGO.jpeg">
+            </a>
+            <input type="checkbox" id="btn">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li>
+                    <label for="btn-1" class="show">About Us <i class="fa fa-chevron-down"></i></label>
+                    <a href="#">About Us<i class="fa fa-chevron-down"></i></a>
+                    <input type="checkbox" id="btn-1">
+                    <ul>
+                        <li><a href="/who_we_are">Who we are</a></li>
+                        <li><a href="/coreteam">Core Team</a></li>
+                        <li><a href="#">Our Reach</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="btn-2" class="show">Services <i class="fa fa-chevron-down"></i></label>
+                    <a href="#">Services<i class="fa fa-chevron-down"></i></a>
+                    <input type="checkbox" id="btn-2">
+                    <ul>
+                        <li><a href="/audit_and_assurance">Audit and Assurance</a></li>
+                        <li><a href="/Business_Process_Outsourcing_Services">Business Process Outsourcing Services</a></li>
+                        <li>
+                            <label for="btn-3" class="show">Taxation <i id="xd" class="fa fa-chevron-down"></i></label>
+                            <a href="#">Taxation<i class="fa fa-chevron-right"></i></a>
+                            <input type="checkbox" id="btn-3">
+                            <ul>
+                              <li><a href="/gst_registration">GST Registration</a></li>
+                              <li><a href="/gst_return">GST Return</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/Secretarial_Compliances">Secretarial Compliances</a></li>
+                        <li><a href="transaction_support">Transaction Support</a></li>
+                    </ul>
+                </li>
+                <li><a href="/industries">Industries</a></li>
+                <li><a href="/careers">Careers</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+
+  <section class="gstreturnform-section">
+    <div class="row">
+      <div class="container">
+        <div class="gstreturnform">
+            <div class="gstreturnforminner">
+              <div class="row">
+                <h1>GST Registration Application Form</h1>
+              </div>
+              <br>
+              <div class="row">
+                <h3 style="font-size: 80%; margin-left: 3%;">Step 2 of 3</h3>
+                <!-- <progress id="file" value="50" max="100"> 50% </progress> -->
+              </div>
+    
+    
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+              </div>
+              
+              <br><br>
+              <form action="/gst_registration/gstregistrationform2" method="post" class="contact-form">
+                
+              
+                <div class="row">
+                  <h2>Primary Address of Business</h2>
+                </div>
+                <br><br>
+                <div class="row">
+                  <div class="col-sm-1">
+                  
+                  </div>
+                  <div class="col-sm-3">
+                    <label for="address"><b>Flat/ Door/ Block/ Street</b><span style="color: red;">*</span></label>
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" name="address" class="form-control" placeholder="" required>
+                  </div>
+                  <div class="col-sm-2">
+                    
+                  </div>
+                </div>
+                <br><br>
+              
+                <div class="row">
+                  <div class="col-sm-1">
+                  
+                  </div>
+                  <div class="col-sm-3">
+                    <label for="area"><b>Area/ Locality</b><span style="color: red;">*</span></label>
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" name="area" class="form-control" placeholder="" required>
+                  </div>
+                  <div class="col-sm-2">
+                    
+                  </div>
+                </div>
+                <br><br>
+              
+                <div class="row">
+                  <div class="col-sm-1">
+                  
+                  </div>
+                  <div class="col-sm-3">
+                    <label for="city"><b>City</b><span style="color: red;">*</span></label>
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" name="city" class="form-control" placeholder="" required>
+                  </div>
+                  <div class="col-sm-2">
+                    
+                  </div>
+                </div>
+                <br><br>
+              
+                <div class="row">
+                  <div class="col-sm-1">
+                  
+                  </div>
+                  <div class="col-sm-3">
+                    <label for="zipcode"><b>Zipcode</b><span style="color: red;">*</span></label>
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="number" name="zipcode" class="form-control" placeholder="" required>
+                  </div>
+                  <div class="col-sm-2">
+                    
+                  </div>
+                </div>
+                <br><br>
+              
+                <div class="row">
+                  <div class="col-sm-1">
+                  
+                  </div>
+                  <div class="col-sm-3" style="padding-top: 5px;">
+                    <label for="state"><b>State</b><span style="color: red;">*</span></label>
+                  </div>
+                  <div class="col-sm-6">
+                    <select id="state" name="state" required>
+                      <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                      <option value="Andhra Pradesh">Andhra Pradesh</option>
+                      <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                      <option value="Assam">Assam</option>
+                      <option value="Bihar">Bihar</option>
+                      <option value="Chandigarh">Chandigarh</option>
+                      <option value="Chhattisgarh">Chhattisgarh</option>
+                      <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                      <option value="Daman and Diu">Daman and Diu</option>
+                      <option value="Delhi" selected="selected">Delhi</option>
+                      <option value="Goa">Goa</option>
+                      <option value="Gujarat">Gujarat</option>
+                      <option value="Haryana">Haryana</option>
+                      <option value="Himachal Pradesh">Himachal Pradesh</option>
+                      <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                      <option value="Jharkhand">Jharkhand</option>
+                      <option value="Karnataka">Karnataka</option>
+                      <option value="Kerala">Kerala</option>
+                      <option value="Lakshadweep">Lakshadweep</option>
+                      <option value="Madhya Pradesh">Madhya Pradesh</option>
+                      <option value="Maharashtra">Maharashtra</option>
+                      <option value="Manipur">Manipur</option>
+                      <option value="Meghalaya">Meghalaya</option>
+                      <option value="Mizoram">Mizoram</option>
+                      <option value="Nagaland">Nagaland</option>
+                      <option value="Odisha">Odisha</option>
+                      <option value="Pondicherry">Pondicherry</option>
+                      <option value="Punjab">Punjab</option>
+                      <option value="Rajasthan">Rajasthan</option>
+                      <option value="Sikkim">Sikkim</option>
+                      <option value="Tamil Nadu">Tamil Nadu</option>
+                      <option value="Telangana">Telangana</option>
+                      <option value="Tripura">Tripura</option>
+                      <option value="Uttar Pradesh">Uttar Pradesh</option>
+                      <option value="Uttarakhand">Uttarakhand</option>
+                      <option value="West Bengal">West Bengal</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-2">
+                    
+                  </div>
+                </div>
+                <br><br>
+              
+                <div class="row">
+                  <div class="col-sm-1">
+                  
+                  </div>
+                  <div class="col-sm-3" style="padding-top: 5px;">
+                    <label for="typeofbusiness"><b>Type of Business</b><span style="color: red;">*</span></label>
+                  </div>
+                  <div class="col-sm-6">
+                    <select name="typeofbusiness" required>
+                      <option value="Type of Filling" selected="selected">Select</option>
+                      <option value="Proprietorship">Proprietorship</option>
+                      <option value="Partnership">Partnership</option>
+                      <option value="Company">Company</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-2">
+                    
+                  </div>
+                </div>
+                <br><br>
+    
+                <div class="row">
+                    <div class="col-sm-1">
+                    
+                    </div>
+                    <div class="col-sm-3">
+                      <label for="dateof"><b>Date of Commencement of business</b><span style="color: red;">*</span></label>
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="date" name="dateof" class="form-control" placeholder="" required>
+                    </div>
+                    <div class="col-sm-2">
+                      
+                    </div>
+                </div>
+                <br><br>
+    
+                <div class="row">
+                    <div class="col-sm-1">
+                    
+                    </div>
+                    <div class="col-sm-3">
+                      <label for="turnover"><b>Turnover of Business till now</b><span style="color: red;">*</span></label>
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="tel" name="turnover" class="form-control" placeholder="" required>
+                    </div>
+                    <div class="col-sm-2">
+                      
+                    </div>
+                </div>
+                <br><br>
+                
+                <div class="row">
+                  <div class="col-sm-1">
+                  
+                  </div>
+                  <div class="col-sm-3" style="padding-top: 5px;">
+                    <label for="possessiontype"><b>Possession type</b><span style="color: red;">*</span></label>
+                  </div>
+                  <div class="col-sm-6">
+                    <select name="possessiontype" id="mytext" required>
+                      <option value="owned" selected="selected">Owned</option>
+                      <option value="rented">Rented</option>
+                      <option value="leased">Leased</option>
+                      <option value="sharedproperty">Shared Property</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-2">
+                    
+                  </div>
+                </div>
+                <br><br>
+    
+                <div class="row">
+                    
+                    <div class="col-sm-12" style="height: 50%;">
+                        <label for="business"><b>Business Activity (carried out at this address)</b><span style="color: red;">*</span></label>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                    <div class="col-sm-12" style="height: 30%;">
+                        <span style="font-size: 90%;">You can select multile options</span>
+                    </div>
+                </div>
+                
+              </form>
+              <form>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="rowa">
+                            <input type="checkbox" id="activity_1_1" name="activity_1_1" value="Manufacturing (factory)">&nbsp;
+                            <label for="activity_1_1">Manufacturing (factory)</label><br>
+                            <input type="checkbox" id="activity_1_2" name="activity_1_2" value="Service Provider">&nbsp;
+                            <label for="activity_1_2">Service Provider</label><br>
+                            <input type="checkbox" id="activity_1_3" name="activity_1_3" value="Warehouse for imported goods">&nbsp;
+                            <label for="activity_1_3">Warehouse for imported goods</label><br>
+                            <input type="checkbox" id="activity_1_4" name="activity_1_4" value="Input Service Distributor">&nbsp;
+                            <label for="activity_1_4">Input Service Distributor</label><br>
+                            <input type="checkbox" id="activity_1_5" name="activity_1_5" value="Works Contract">&nbsp;
+                            <label for="activity_1_5">Works Contract</label><br>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="rowa">
+                            <input type="checkbox" id="activity_2_1" name="activity_2_1" value="Wholesale Business">&nbsp;
+                            <label for="activity_2_1">Wholesale Business</label><br>
+                            <input type="checkbox" id="activity_2_2" name="activity_2_2" value="Service Recipient">&nbsp;
+                            <label for="activity_2_2">Service Recipient</label><br>
+                            <input type="checkbox" id="activity_2_3" name="activity_2_3" value="Leasing Business">&nbsp;
+                            <label for="activity_2_3">Leasing Business</label><br>
+                            <input type="checkbox" id="activity_2_4" name="activity_2_4" value="Export related (export oriented unit, STP etc)">
+                            <label for="activity_2_4">Export related (export oriented unit, STP etc)</label><br>
+                            <input type="checkbox" id="activity_2_5" name="activity_2_5" value="Others">&nbsp;
+                            <label for="activity_2_5">Others</label><br>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="rowa">
+                            <input type="checkbox" id="activity_3_1" name="activity_3_1" value="Retail Business">&nbsp;
+                            <label for="activity_3_1">Retail Business</label><br>
+                            <input type="checkbox" id="activity_3_2" name="activity_3_2" value="Warehouse / Godown">&nbsp;
+                            <label for="activity_3_2">Warehouse / Godown</label><br>
+                            <input type="checkbox" id="activity_3_3" name="activity_3_3" value="Office">&nbsp;
+                            <label for="activity_3_3">Office</label><br>
+                            <input type="checkbox" id="activity_3_4" name="activity_3_4" value="Export / import related (SEZ)">&nbsp;
+                            <label for="activity_3_4">Export / import related (SEZ)</label><br>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                  <div class="col-sm-12">
+                    <label for="additionalplace"><b>Do you want to add additional place of business?</b>&nbsp;<span style="color: red;">*</span></label>
+                  </div>
+                </div>
+                <div class="row">
+                  &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="yes" name="yes" value="yes" style="margin-top: 6px;">&nbsp;&nbsp;
+                  <label for="yes">Yes</label>
+                </div>
+                <div class="row">
+                  &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="no" name="no" value="no" style="margin-top: 5px;">&nbsp;&nbsp;
+                  <label for="no">No</label>
+                </div>
+              </form>
+              <br><br>
+                <div class="row">
+                  <div class="col-sm-2">
+                  
+                  </div>
+                  <div class="col-sm-4">
+                    <a href="/gst_registration"><button class="btn btn-lg btn-primary btn-block" type="submit">Previous</button></a>
+                  </div>
+                  <div class="col-sm-4">
+                    <a href="/gst_registration/gstregistrationform2/gstregistrationform3"><button class="btn btn-lg btn-primary btn-block" type="submit">Next</button></a>
+                  </div>
+                  <div class="col-sm-2">
+                  
+                  </div>
+                </div>  
+                <br><br>        
+              
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Site footer -->
+    <footer id="gstreturnform" class="page-footer font-small mdb-color pt-4 y">
+      <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+        
+        <!-- Footer links -->
+        <div class="row text-center text-md-left mt-3 pb-3">
+        
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Tax Stand</h6>
+            <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+              consectetur
+              adipisicing elit.</p>
+          </div>
+          <!-- Grid column -->
+        
+          <hr class="w-100 clearfix d-md-none">
+        
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">About Tax Stand</h6>
+            <p>
+              <a href="/who_we_are">Who we are</a>
+            </p>
+            <p>
+              <a href="/coreteam">Core Team</a>
+            </p>
+          <p>
+            <a href="#!">Our Reach</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+      
+        <hr class="w-100 clearfix d-md-none">
+      
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Services</h6>
+          <p>
+            <a href="/audit_and_assurance">Audit and Assurance</a>
+          </p>
+          <p>
+            <a href="/Business_Process_Outsourcing_Services">Business Process Outsourcing Services</a>
+          </p>
+          <p>
+            <a href="#!">Taxation</a>
+          </p>
+          <p>
+            <a href="Secretarial_Compliances">Secretarial Compliances</a>
+          </p>
+          <p>
+            <a href="/transaction_support">Transaction Support Service</a>
+          </p>
+        </div>
+      
+        <!-- Grid column -->
+        <hr class="w-100 clearfix d-md-none">
+      
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+          <p>
+            <i class="fas fa-home mr-3"></i> New Delhi, India</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> taxstand@gmail.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+          <p>
+            <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      
+    </div>
+      <!-- Footer links -->
+    
+      <hr>
+    
+      <!-- Grid row -->
+      <div class="row d-flex align-items-center">
+      
+        <!-- Grid column -->
+        <div class="col-md-7 col-lg-8">
+        
+          <!--Copyright-->
+          <p class="text-center text-md-left">© 2020 Copyright:
+            <a href="#">
+              <strong> TaxStand.com</strong>
+            </a>
+          </p>
+        
+        </div>
+        <!-- Grid column -->
+      
+        <!-- Grid column -->
+        <div class="col-md-5 col-lg-4 ml-lg-0">
+        
+          <!-- Social buttons -->
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fa fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+    </footer>
+  <!-- Footer -->
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+      function passval(){
+        var mainstring = document.getElementById("mytext").value;
+        var str = mainstring.toString();
+        var selecttext = str.substring(str.length - 7, str.length);
+        localStorage.setItem("ddvalue",selecttext);
+        return true;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://kit.fontawesome.com/5096c7feb4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="css/GSTRegistration.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <title>GST Registration</title>
+</head>
+<body>
+
+    <section class="gst-registration">
+        <div class="row registration clearfix">
+            <div class="col span-1-of-2 box">
+                <h1>GST REGISTRATION</h1>
+                <hr>
+                <h3>Register for GST online for Free* and stay ahead on GST Compliance!</h3>
+                <br>
+                <p>GST is a tax registration mandatory for all businesses in India meeting ANY of these conditions:</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Annual Sales greater than Rs. 40Lakhs</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Making sales outside your own state</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;E-commerce Seller</p>
+
+                <br><br>
+                <p>Also See : 
+                    <a href="/gst_return"><button>GST RETURN</button></a>
+                    <a href="/"><button>Home</button></a>
+                </p>
+
+            </div>
+
+            <div class="col span-1-of-2 box">
+                <div class="registration-form-GST">
+                    <h1 style="text-align: center;">GST REGISTRATION</h1>
+                    <form method="post" action="/gst_registration" class="contact-form">
+                        <div class="form">
+                            <div class="col span-1-of-3">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                            </div>
+                        </div>
+
+                        <div class="form">
+                            <div class="col span-1-of-3">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+
+                        <div class="form">
+                            <div class="col span-1-of-3">
+                                <label for="phone">Phone No.</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="phone" id="phone" placeholder="Your Phone No." required>
+                            </div>
+                        </div>
+
+                        <div class="form">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <a href="#"><input type="submit" value="Start Registration"></a>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- <section class="links">
+        <div class="row">
+            <ul>
+                <li><a href="#about"></a>About</li>
+                <li><a href="#types"></a>Types</li>
+                <li><a href="#rules"></a>Rules</li>
+                <li><a href="#process"></a>Process</li>
+                <li><a href="#penalties"></a>Penalties</li>
+                <li><a href="#faqs"></a>FAQs</li>
+            </ul>
+        </div>
+    </section> -->
+
+    <section>
+        <div class="row">
+            <h2>Types of GST</h2>
+            <div class="next-content">
+                <p>
+                    India has a Dual GST Model. Under this tax maybe levied simultaneously by both Central and State governments on certain taxable supplies. Such as on inter-state supplies, tax is levied by Central Government.
+                </p>
+
+                <br>
+
+                <table class="table">
+                    <tr>
+                        <th>Features</th>
+                        <th>Central GST&nbsp;&ndash;&nbsp;CGST</th>
+                        <th>State GST&nbsp;&ndash;&nbsp;SGST</th>
+                        <th>Integrated GST&nbsp;&ndash;&nbsp;IGST</th>
+                    </tr>
+    
+                    <tr>
+                        <td>Applicability</td>
+                        <td>Central Government on Intra-State supplies of Goods and/or Services</td>
+                        <td>State Government, on Intra-State supplies</td>
+                        <td>Central Government, on Inter-State supplies</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tax Levied By</td>
+                        <td>Supplies inside a state</td>
+                        <td>Supplies inside a state	</td>
+                        <td>Interstate supplies and import</td>
+                    </tr>
+
+                    <tr>
+                        <td>Input Tax Credit</td>
+                        <td>Against CGST and IGST</td>
+                        <td>Against SGST and IGST</td>
+                        <td>Against CGST, SGST, and IGST</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tax Revenue Sharing</td>
+                        <td>Central Government</td>
+                        <td>State Government</td>
+                        <td>Shared between State and Central governments</td>
+                    </tr>
+
+                    <tr>
+                        <td>Free Supplies</td>
+                        <td>Applicable</td>
+                        <td>Applicable</td>
+                        <td>Applicable</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-procedure">
+        <div class="row">
+            <h2>Procedure of GST Registration through Tax Stand</h2>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-4">
+                <img src="photos/register.png">
+                <p>Fill the simple application form provided on our website.</p>
+            </div>
+            
+            <div class="col span-1-of-4">
+                <img src="photos/courier-icon.png">
+                <p>Send your documents that are required according to your category of business.</p>
+            </div>
+
+            <div class="col span-1-of-4">
+                <img src="photos/money icon.png">
+                <p>We will file all your forms on behalf of you along with the declaration.</p>
+            </div>
+
+            <div class="col span-1-of-4">
+                <img src="photos/email icon.png">
+                <p>As soon as we will get your GST number, we will send you by E-mail.</p>
+            </div>
+
+            <div class="procedure-img">
+                <img src="photos/GST-Registration-Procedure.jpg">
+            </div>
+        </div>
+    </section>
+      
+    
+    <section class="who-must-get">
+        <div class="row">
+            <h2>Who Must Get GST Registration</h2>
+            <div class="next-content">
+                <p>All businesses involved in buying or selling goods or providing services, or both, should register for GST. But for below-listed persons, GST Registration is compulsory.<br></p>
+
+                <ul style="list-style: none;">
+                    <li style="display: table;">
+                        <span class="points-sub-content"><i class="fas fa-angle-right"></i></span>
+                        <div class="inner-content">
+                            <b>Previous Law Converted Taxpayer&nbsp;&ndash;&nbsp;</b>All individuals or companies registered under the Pre-GST tax laws like Service Tax or Excise or VAT, etc.
+                        </div>
+                    </li>
+                </ul>
+
+                <ul style="list-style: none;">
+                    <li style="display: table;">
+                        <span class="points-sub-content"><i class="fas fa-angle-right"></i></span>
+                        <div class="inner-content">
+                            <b>Turnover for Goods Provider &nbsp;&ndash;&nbsp;</b>If your sales or turnover of goods is crossing Rs. 40 lakh in a year then GST Registration is mandatory. For the Special Category Status, the limit is Rs. 20 lakh in a year.
+                        </div>
+                    </li>
+                </ul>
+
+                <ul style="list-style: none;">
+                    <li style="display: table;">
+                        <span class="points-sub-content"><i class="fas fa-angle-right"></i></span>
+                        <div class="inner-content">
+                            <b>Turnover for Service Provider&nbsp;&ndash;&nbsp;</b>If you are a service provider & sales or turnover is crossing Rs. 20 lakh in a year then GST Registration is mandatory. For the Special Category Status, the limit is Rs. 10 lakh in a year
+                        </div>
+                    </li>
+                </ul>
+
+                <ul style="list-style: none;">
+                    <li style="display: table;">
+                        <span class="points-sub-content"><i class="fas fa-angle-right"></i></span>
+                        <div class="inner-content">
+                            <b>Casual Taxpayer&nbsp;&ndash;&nbsp;</b>If you supply goods or services, in events/exhibitions, and not have a permanent place of doing business. In such cases, GST is charged based on an estimated turnover of 90 days. The validity of the Registration is also 90 days.
+                        </div>
+                    </li>
+                </ul>
+
+                <ul style="list-style: none;">
+                    <li style="display: table;">
+                        <span class="points-sub-content"><i class="fas fa-angle-right"></i></span>
+                        <div class="inner-content">
+                            <b>Agents of Suppliers or Input Service Distributor (ISD)&nbsp;&ndash;&nbsp;</b>All supplier agents and ISD, to earn benefits of Input Tax Credit, need GST Registration.
+                        </div>
+                    </li>
+                </ul>
+
+                <ul style="list-style: none;">
+                    <li style="display: table;">
+                        <span class="points-sub-content"><i class="fas fa-angle-right"></i></span>
+                        <div class="inner-content">
+                            <b>NRI Taxable Person&nbsp;&ndash;&nbsp;</b>If you are an NRI or handling the business of NRI in India.
+                        </div>
+                    </li>
+                </ul>
+
+                <ul style="list-style: none;">
+                    <li style="display: table;">
+                        <span class="points-sub-content"><i class="fas fa-angle-right"></i></span>
+                        <div class="inner-content">
+                            <b>Reverse Charge Mechanism (RCM)&nbsp;&ndash;&nbsp;</b>Businesses who need to pay taxes under the RCM also need to be GST registered.
+                        </div>
+                    </li>
+                </ul>
+
+                <ul style="list-style: none;">
+                    <li style="display: table;">
+                        <span class="points-sub-content"><i class="fas fa-angle-right"></i></span>
+                        <div class="inner-content">
+                            <b>E-Commerce Portals & Sellers&nbsp;&ndash;&nbsp;</b>Every e-commerce portal (such as Amazon or Flipkart) under which multiple vendors are selling their products. Or for all vendors. You need a GST Registration.
+                        </div>
+                    </li>
+                </ul>
+
+                <ul style="list-style: none;">
+                    <li style="display: table;">
+                        <span class="points-sub-content"><i class="fas fa-angle-right"></i></span>
+                        <div class="inner-content">
+                            <b>Outside India Online Portal&nbsp;&ndash;&nbsp;</b>For suppliers of online information and database access or retrieval services from a place outside India to Indian Residents.
+                        </div>
+                    </li>
+                </ul>
+
+                <ul style="list-style: none;">
+                    <li style="display: table;">
+                        <span class="points-sub-content"><i class="fas fa-angle-right"></i></span>
+                        <div class="inner-content">
+                            <b>Transferee&nbsp;&ndash;&nbsp;</b>When the business has been transferred.
+                        </div>
+                    </li>
+                </ul>
+
+                <ul style="list-style: none;">
+                    <li style="display: table;">
+                        <span class="points-sub-content"><i class="fas fa-angle-right"></i></span>
+                        <div class="inner-content">
+                            <b>Inter-State Operations&nbsp;&ndash;&nbsp;</b>Persons making an inter-state supply. Whatever the turnover.
+                        </div>
+                    </li>
+                </ul>
+
+                <ul style="list-style: none;">
+                    <li style="display: table;">
+                        <span class="points-sub-content"><i class="fas fa-angle-right"></i></span>
+                        <div class="inner-content">
+                            <b>Brands&nbsp;&ndash;&nbsp;</b>Aggregator who supplies service under his Brand or Trade Name.
+                        </div>
+                    </li>
+                </ul>
+
+                <ul style="list-style: none;">
+                    <li style="display: table;">
+                        <span class="points-sub-content"><i class="fas fa-angle-right"></i></span>
+                        <div class="inner-content">
+                            <b>Brands&nbsp;&ndash;&nbsp;</b>Aggregator who supplies service under his Brand or Trade Name.
+                        </div>
+                    </li>
+                </ul>
+
+                <ul style="list-style: none;">
+                    <li style="display: table;">
+                        <span class="points-sub-content"><i class="fas fa-angle-right"></i></span>
+                        <div class="inner-content">
+                            <b>Other Taxation&nbsp;&ndash;&nbsp;</b>Persons who are required to deduct tax u/s 37 (TDS) of the Income Tax Act.
+                        </div>
+                    </li>
+                </ul>
+
+                <ul style="list-style: none;">
+                    <li style="display: table;">
+                        <span class="points-sub-content"><i class="fas fa-angle-right"></i></span>
+                        <div class="inner-content">
+                            <b>Voluntary GST Registration&nbsp;&ndash;&nbsp;</b>Any entity can obtain GST registration at any-time. Even when the above mandatory conditions don’t apply to them.
+                        </div>
+                    </li>
+                </ul>
+
+                <ul style="list-style: none;">
+                    <li style="display: table;">
+                        <span class="points-sub-content"><i class="fas fa-angle-right"></i></span>
+                        <div class="inner-content">
+                            <b>Inter-State Registration&nbsp;&ndash;&nbsp;</b>If you are a supplier in more than one state you need GST Registration in all the states that you supply goods or services to.
+                        </div>
+                    </li>
+                </ul>
+
+                <ul style="list-style: none;">
+                    <li style="display: table;">
+                        <span class="points-sub-content"><i class="fas fa-angle-right"></i></span>
+                        <div class="inner-content">
+                            <b>Branches&nbsp;&ndash;&nbsp;</b>If your business has multiple branches in multiple states, register one particular branch as the main office or head office and the remaining branches as additional. (Not applicable if the business has separate verticals as listed in Section 2 (18) of the CGST Act, 2017.)
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="row">
+            <h2>Documents Required</h2>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-2 documents-division">
+                <h2>Sole Propritorship / Indivisual</h2>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Aadhaar card, PAN card, and a photograph of the sole proprietor</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;<b>Details of Bank account-</b> Bank statement or a canceled cheque</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp; <b>Office Address proof:</b>
+                    <ul>
+                        <li><b>Own office&nbsp;&ndash;&nbsp;</b>Copy of electricity bill/water bill/landline bill/ property tax receipt/a copy of municipal khata</li>
+                        <li><b>Rented Office&nbsp;&ndash;&nbsp;</b>Rent agreement and NOC (No objection certificate) from the owner.</li>
+                    </ul>
+                </p>
+                <br><br><br><br><br>
+            </div>
+
+            <div class="col span-1-of-2 documents-division">
+                <h2>Partnership deed / LLP Agreement</h2>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Aadhaar card, PAN card, Photograph of all partners.</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Details of Bank such as a copy of canceled cheque or bank statement</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;<b>Proof of address of Principal place of business and additional place of business :</b>
+                    <ul>
+                        <li><b>Own office&nbsp;&ndash;&nbsp;</b>Copy of electricity bill/water bill/landline bill/ a copy of municipal Khata/property tax receipt</li>
+                        <li><b>Rented Office&nbsp;&ndash;&nbsp;</b>Rent agreement and NOC (No objection certificate) from the owner.</li>
+                    </ul>
+                </p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp; <b>In case of LLP&nbsp;&ndash;&nbsp;</b>
+                    Registration Certificate of the LLP, Copy of board resolution
+                    Appointment Proof of authorized signatory- letter of authorization
+                </p>
+                <br>
+            </div>
+        </div>
+    </section>
+
+    
+    <section>
+        <div class="row">
+            <div class="col span-1-of-2 documents-division">
+                <h2>Society or Trust or Club</h2>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Pan Card of society/Club/Trust</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Certificate of Registration</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;PAN Card and Photo of Promotor/ Partners</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp; <b>Details of Bank&nbsp;&ndash;&nbsp;</b>bank statement or a canceled cheque</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;<b>Proof of address of Principal place of business and additional place of business :</b>
+                    <ul>
+                        <li><b>Own office&nbsp;&ndash;&nbsp;</b>Copy of electricity bill/water bill/landline bill/ a copy of municipal Khata/property tax receipt</li>
+                        <li><b>Rented Office&nbsp;&ndash;&nbsp;</b>Rent agreement and NOC (No objection certificate) from the owner.</li>
+                    </ul>
+                </p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Appointment Proof of authorized signatory- letter of authorization</p>
+            </div>
+
+
+            <div class="col span-1-of-2 documents-division">
+                <h2>HUF</h2>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;A copy of PAN card of HUF</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Aadhar card of Karta</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Photograph</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;<b>Proof of address of Principal place of business and additional place of business :</b>
+                    <ul>
+                        <li><b>Own office&nbsp;&ndash;&nbsp;</b>Copy of electricity bill/water bill/landline bill/ a copy of municipal Khata/property tax receipt</li>
+                        <li><b>Rented Office&nbsp;&ndash;&nbsp;</b>Rent agreement and NOC (No objection certificate) from the owner.</li>
+                    </ul>
+                </p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp; <b>Details of Bank&nbsp;&ndash;&nbsp;</b>bank statement or a canceled cheque</p>
+                <br><br>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="row">
+            <div class="col span-1-of-2 documents-division">
+                <h2>Society or Trust or Club</h2>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Pan Card of society/Club/Trust</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Certificate of Registration</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;PAN Card and Photo of Promotor/ Partners</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp; <b>Details of Bank&nbsp;&ndash;&nbsp;</b>bank statement or a canceled cheque</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;<b>Proof of address of Principal place of business and additional place of business :</b>
+                    <ul>
+                        <li><b>Own office&nbsp;&ndash;&nbsp;</b>Copy of electricity bill/water bill/landline bill/ a copy of municipal Khata/property tax receipt</li>
+                        <li><b>Rented Office&nbsp;&ndash;&nbsp;</b>Rent agreement and NOC (No objection certificate) from the owner.</li>
+                    </ul>
+                </p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Appointment Proof of authorized signatory- letter of authorization</p>
+            </div>
+        </div>
+    </section>
+
+        
+    <section>
+        <div class="row">
+            <h2>Penalties of Non-Compliance</h2>
+
+            <div class="next-content">
+                <p>
+                    All GST Returns must be filed by the 20th of the following month. There are strict laws under the GST Act for non-compliance with the Rules & Regulations.
+                    <br><br>
+                    Penalty for Not Getting GST Registration, when a business is coming under the purview. The penalty is 100% of the tax amount if the offender has not filed for GST registration and intends to purposefully avoid it. The amount is the tax as applicable. Or Rs. 10,000, whichever is higher.
+                    <br><br>
+                    A penalty of 100% tax due or Rs. 10,000, whichever is higher, is also applicable to those who choose Composition Scheme despite not being eligible to it.
+                    <br><br>
+                    Any offender not paying his due tax or making short payments (genuine errors) is liable to pay a penalty of 10% of the tax amount. This amount cannot be less than Rs 10,000.
+                    <br><br>
+                    A person guilty of not providing the GST invoice is liable to be charged 100% tax due or Rs. 10,000. Whichever is higher.
+                    <br><br>
+                    An offender will be charged a fine of Rs. 25,000 for incorrect invoicing.
+                    <br><br>
+                    If a person has not filed for unpaid tax, there is a penalty of Rs. 50 per day. Rs. 20 per day if he was to file for NIL returns. And the maximum amount must not exceed Rs. 5,000.
+                    <br><br>
+                    There is also a provision of the penalty by a jail term for tax offenders to commit fraud.
+                </p>
+            </div>
+        </div>
+    </section>
+
+        
+    <section>
+        <div class="row">
+            <h2>Benefits of GST Registration</h2>
+
+            <div class="next-content">
+                
+                <div class="next-sub-content">
+                    
+                    <h3><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Elimination of Multiple Taxes</h3>
+                    <p>
+                        One of the benefits of GST is the elimination of multiple indirect taxes that existed earlier. So many taxes have been replaced. Taxes like excise, octroi, sales tax, Service tax, CENVAT, turnover tax, etc are not applicable anymore and all those have come under common tax called GST.
+                    </p>
+                </div>
+
+                <div class="next-sub-content">
+                    <h3><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Save more Money</h3>
+                    <p>
+                        GST applicability has resulted in the elimination of double charging in the system for a common man. Through this, the price of goods and services has reduced & helping the common man saving more money.
+                    </p>
+                </div>
+
+                <div class="next-sub-content">
+                    <h3><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Ease of Business</h3>
+                    <p>
+                        GST brought the concept of “One Nation One Tax”. That unhealthy competition that existed earlier among the States has benefited businesses wishing to do interstate business.
+                    </p>
+                </div>
+
+                <div class="next-sub-content">
+                    <h3><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Cascading Effect Reduction</h3>
+                    <p>
+                        From manufacturing to consumption, GST is applicable at all stages. It is providing tax credit benefits at every stage in the chain. In the earlier scenario, at every stage, the margin used to get added and tax was paid on the whole amount. Under GST the businesses are taking benefit of Input Tax Credit and tax is being paid on the amount of value addition only. GST has reduced the cascading effect of tax thereby reducing the cost of the product.
+                    </p>
+                </div>
+
+                <div class="next-sub-content">
+                    <h3><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;More Employment</h3>
+                    <p>
+                        Because GST has reduced the cost of products, the demand, for some – if not all, products have increased. With the increase in demand, to meet the increase in supply, the employment graph has started going up.
+                    </p>
+                </div>
+
+                <div class="next-sub-content">
+                    <h3><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Increase in GDP</h3>
+                    <p>
+                        The higher the demand, the higher will be the production. This results in a higher Gross Domestic Product (GDP).
+                    </p>
+                </div>
+
+                <div class="next-sub-content">
+                    <h3><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Reduction in Tax Evasion</h3>
+                    <p>
+                        Goods and services tax is a single tax that includes various earlier taxes and has made the system efficient with fewer chances of corruption and Tax Evasion.
+                    </p>
+                </div>
+
+                <div class="next-sub-content">
+                    <h3><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;More Competitive Product</h3>
+                    <p>
+                        Manufacturing has become more competitive with GST eliminating the cascading effect of the tax, inter-state tax, high logistics cost. Bringing competitiveness as GST will address the cascading effect of the tax, inter-state tax, high log benefits to the businessman and consumer.
+                    </p>
+                </div>
+
+                <div class="next-sub-content">
+                    <h3><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Increase in Revenue</h3>
+                    <p>
+                        Under the GST regime, 17 indirect taxes have been replaced into a single tax. The increase in product demand means higher tax revenue for state and central government.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        
+    <section>
+        <div class="row">
+            <h2>Voluntary GST Registration</h2>
+
+            <div class="next-content">
+                <p>
+                    A person who is not liable, still files for GST application, can get registered. However, then, it becomes essential for him to file Returns, after getting a GST number. Else, he will have to pay a penalty, as applicable.
+                    <br><br>
+                    You can choose to register for GST voluntarily too.
+                    <br><br>
+                    Especially if you are wishing to claim Input Tax Credit. Even if you are not liable to be registered, you can be registered voluntarily. After registration, you will also have to comply with regulations as applicable to those required to be registered.
+                </p>
+
+                <h3>Benefits of registering voluntarily under GST</h3>
+                <ul>
+                    <li>Take Input Tax Credit,</li>
+                    <li>Operate interstate without restrictions,</li>
+                    <li>Have the option to register on e-commerce websites,</li>
+                    <li>Have a competitive advantage compared to other rival businesses,</li>
+                    <li>Fewer hassles and better compliance with government licensing agencies,</li>
+                    <li>Focus on your Business growth</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+        
+    <section>
+        <div class="row">
+            <h2>Input Tax Credit</h2>
+
+            <div class="next-content">
+                <p>
+                    Inputs are all those goods that went into creating the finished products provided to the final consumer. Businesses are charged GST on goods/services that are used as inputs. The ITC mechanism allows GST registered businesses to receive refunds on the GST paid for purchasing all inputs. This helps prevent the cascading taxation effect, which was the primary reason behind the introduction of the GST.
+                    <br><br>
+                    For instance: GST payable on the supply of the final product of a manufacturer is Rs. 850 and the GST paid on inputs is Rs. 725. The manufacturer can claim the Rs. 725 as ITC. This brings the net tax payable at the time of supply to Rs. 125 only (Rs. 850 – Rs. 725).
+                    <br><br>
+                    Under the previous indirect tax regime of levy of Service Tax, VAT, and Excise – a lot of input tax credit was not properly utilized.
+                    <br><br>
+                    <h3>Who are eligible to claim Input Tax Credit?</h3>
+                    
+                    ITC is available only to those entities who have registered under the GST Act. Only GST registered businesses can claim ITC on the tax paid for the purchase of any business relevant inputs.
+                    <br>
+                    <h3>Who cannot claim ITC?</h3>
+                    Input Tax Credit can be claimed only for business purposes. It is not available for goods or services exclusively used for:
+                    <ul>
+                        <li>Personal Use</li>
+                        <li>Exempt supplies</li>
+                        <li>Supplies for which ITC is specifically not available.</li>
+                    </ul>
+                
+
+                    <h3>Benefits of registering voluntarily under GST</h3>
+                    <ul>
+                        <li>Take Input Tax Credit,</li>
+                        <li>Operate interstate without restrictions,</li>
+                        <li>Have the option to register on e-commerce websites,</li>
+                        <li>Have a competitive advantage compared to other rival businesses,</li>
+                        <li>Fewer hassles and better compliance with government licensing agencies,</li>
+                        <li>Focus on your Business growth</li>
+                    </ul>
+                    Apart from the above, there are some other cases where ITC will be reversed. Such as Credit Note issued to ISD, Non-payment of invoices within 180 days, assets bought partly or wholly for exempted supplies or personal use, etc.
+                    <br>
+                    <h3>Conditions for claiming Input Tax Credit</h3>
+                    <ol>
+                        <li>GST invoice showing details of tax paid is necessary,</li>
+                        <li>The goods on which GST has been paid have been received by the consumer,</li>
+                        <li>The applicant has filed the relevant tax returns,</li>
+                        <li>The supplier had paid the due tax to the government,</li>
+                        <li>The ITC applicant is registered under GST,</li>
+                        <li>If goods were received in installments, ITC can be claimed only after the final lot has been received.</li>
+                    </ol>
+                    <h3>ITC cannot be claimed if</h3>
+                    <ul>
+                        <li>Composition tax registered entities paying GST on inputs,</li>
+                        <li>If depreciation has been claimed on the tax part of a capital good,</li>
+                        <li>On goods not used as inputs such as supplies for personal use,</li>
+                        <li>On goods on which ITC is not applicable under the GST Act (exempted goods).</li>
+                    </ul>
+                    <h3>Input tax credits can be used as:</h3>
+                    <ul>
+                        <li>CGST input tax credits are allowed to be used to pay CGST and IGST,</li>
+                        <li>SGST input tax credits are allowed to be used to pay SGST and IGST,</li>
+                        <li>IGST input tax credits are allowed to be used to pay CGST, SGST, and IGST.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </section>
+    
+        
+    <section>
+        <div class="row">
+            <h2>What is the Composition scheme under GST?</h2>
+
+            <div class="next-content">
+                <p>
+                    Small businesses with an annual turnover of less than Rs. 1.5 crore (Rs. 75 Lakhs for the Special Category States) can opt for the Composition scheme.
+                    <ol>
+                        <li>Composition dealers need to pay nominal tax rates based on the type of business. (a maximum of 2% for manufacturers, 5% for the restaurant service sector and 1% for other suppliers.)</li>
+                        <li>Composition dealers are required to file only a single quarterly return (instead of the monthly returns filed by normal taxpayers).</li>
+                        <li>They cannot issue tax invoices. That is, they cannot collect tax from customers and they are to pay the tax out of their own pocket.</li>
+                        <li>Entities that have opted for the Composition Scheme cannot claim any Input Tax Credit.</li>
+                    </ol>
+
+                    <h3>Who can opt for the Composition scheme?</h3>
+                    <ul>
+                        <li>All SMEs looking for lower compliance and lower rates of taxes under GST.</li>
+                        <li>A GST taxpayer, whose turnover is below Rs 1.5 crore, can opt for the Composition Scheme. (In the case of Special Category States, the present limit is Rs 75 lakh.)</li>
+                        <li>The Aggregate Turnover of all businesses registered under the same PAN would be taken into consideration to calculate turnover.</li>
+                        <li>Shall pay tax at normal rates in case he is liable under the reverse charge mechanism</li>
+                        <li>Dealers of intra-state supply of goods (or service of only the restaurant sector).</li>
+                    </ul>
+
+                    <h3>Which businesses are not eligible to apply for the Composition Scheme?</h3>
+                    Composion scheme does not apply to:
+                    <ul>
+                        <li>Service providers</li>
+                        <li>Inter-state sellers</li>
+                        <li>E-commerce sellers</li>
+                        <li>Supplier of non-taxable goods</li>
+                        <li>Manufacturer of Notified Goods</li>
+                        <li>All the suppliers of services except those providing restaurant services (not serving alcohol),</li>
+                        <li>Suppliers of – ice cream, pan masala or tobacco (and its substitutes),</li>
+                        <li>Casual Taxable Person,</li>
+                        <li>Non-resident taxable person,</li>
+                        <li>Supplier of exempted goods or services.</li>
+                    </ul>
+
+                    <h3>How to apply for the Composition Scheme?</h3>
+                    <ol>
+                        <li>In case of new registration, you can opt for the scheme at the time of GST Registration.</li>
+                        <li>If you are already registered you can file for it by submitting GST CMP-02 online.</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+    </section>
+
+        
+    <section>
+        <div class="row">
+            <h2>Frequently Asked Questions</h2>
+    
+            <div class="accordion">
+    
+                <!--First Accordion Item-->
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What is GST registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            GST, or Goods and Services Tax, has been one of the biggest tax reforms this country has seen. It is a single tax with which those taxes that existed previously have been replaced. Such as Central Excise, VAT, Entry Tax, Octroi, Service Tax, etc.
+                        <br><br>
+                        GST was rolled out nationwide on July 1, 2017.
+                        <br><br>
+                        It is a destination-based tax.
+                        <br><br>
+                        And follows a dual model in which both the State and the Central government levy tax on goods and services.
+                        All businesses are required to obtain a GST number for every state that specific business has been registered in. The first step under the GST regime is to know whether the business is liable to register and register accordingly.
+                        </p>
+                    </div>
+                </div>
+    
+                <!--Second Accordion Item-->
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        How to register for GST?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            With TaxStand, GST registration is as simple as saying 1-2-3.
+                        <ul>
+                            <li class="material">You fill the application form given above.</li>
+                            <li class="material">Mail the documents as required.</li>
+                            <li class="material">Sit-back. All forms will be filed by us.</li>
+                            <li class="material">Receive your GST number on e-mail.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+    
+                <!--Third Accordion Item-->
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        How much does GST registration cost?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            That depends on a few factors. Such as the type of business, package you have chosen, etc. Call +91 875 000 8585 for all queries. You can also e-mail us at contact@taxstand.com to know more.
+                        </p>
+                    </div>
+                </div>
+    
+                <!--Fourth Accordion Item-->
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What are the documents required for GST?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            Each category of business require documents according to its category. However, the basic documents required in each case are: ID-proof, Address proof, business registration proof, bank details, passport sized photographs, etc.
+                        </p>
+                    </div>
+                </div>
+    
+                <!--Fifth Accordion Item-->
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        Who needs to register for GST?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            A supplier of goods, with an annual turnover of Rs. 40 lakh (Rs. 20 lakhs for special category States), must apply for GST registration. There are certain cases where the taxable person is liable to pay GST even though his turnover has not crossed this limit.
+                        <br><br>
+                        Those providing services must get GST registration, once their turnover crosses Rs.20 lakhs and in case of Special Category States at Rs 10 lakhs.
+                        </p>
+                    </div>
+                </div>
+    
+                <!--Sixth Accordion Item-->
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        Who does not need to apply for GST registration?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            Each category of business require documents according to its category. However, the basic documents required in each case are: ID-proof, Address proof, business registration proof, bank details, passport sized photographs, etc.
+                        </p>
+                    <ul>
+                        <li class="material">A supplier whose aggregate turnover is less than the prescribed limit and is not even covered under the mandatory GST requirement list.</li>
+                        <li class="material">When supplies are covered under the Reverse Charge Mechanism (RCM).</li>
+                        <li class="material">Those who are supplying non-taxable goods and services under GST.</li>
+                        <li class="material">Agriculturists</li>
+                        <li class="material">Services by any Court or Tribunal established under the law,</li>
+                        <li class="material">Services of crematorium, funeral, burial, mortuary, including transportation of the deceased,</li>
+                        <li class="material">Sale of land/building subject to Schedule 5 (ii)(b). Actionable claims, other than betting, lottery, and gambling.</li>
+                    </ul>    
+                        
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        Is there a time limit to apply GST online?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            A person must apply for GST registration within 30 days from the date on which he becomes liable to registration. The process, rules, and conditions of the GST application must follow the Registration Rules laid by GST Council.
+                        <br><br>
+                        A Casual taxable person and a Non-Resident taxable person must get their GST registration, at least 5 days before the commencement of business.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What goods or services have been exempted under GST?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            Food (such as Cereals, Fruits & Vegetables, milk, etc), Raw Materials (Raw Material, Yarn, Fiber etc), Medical Tools & Instruments (Hearing Aids, or aids used by physically challenged people), Handtools {such as Spades, Shovel, Newspapers, Books, Beehives, Human Blood, Chalk Sticks, Contraceptives, Earthen Pots, Props used in Pooja (including Idols, Bindi, KumKum), Kites, Organic Manure, and Vaccines. etc.
+                                <br><br>
+                                Services related to Agriculture, Cultivation, Harvesting, etc. Transportation Services by road or bridge. Services by RBI, Foreign Diplomatic Missions, Postal Services, etc.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        Which organizations are exempt from GST registration?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            The following do not require registration and are allotted a UIN (Unique Identification Number) instead. They can take a refund of taxes on notified supplies of goods/services received by them:
+                        <br><br>
+                        <ul>
+                            <li class="material">Any specialized agency of UNO (United Nations Organisation) or any other multilateral financial institution and Organization notified under the United Nations Act, 1947,</li>
+                            <li class="material">Consulate or Embassy of foreign countries</li>
+                            <li class="material">Any other person as notified by the Board/Commissioner,</li>
+                            <li class="material">The Central Government or State Government may notify exemption from registration to specific persons.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What commodities are outside the purview of GST?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            Alcohol, for human consumption, and five petroleum products namely Crude Petroleum, Petrol (motor spirit), High-speed Diesel, Natural Gas, and Aviation Turbine Fuel were exempt earlier, but only temporarily.
+                        <br><br>
+                        Also, electricity, as a basic need, has been exempt from GST. VAT & Central Excise, as per the earlier taxation system will continue on those.
+                        <br><br>
+                        GST Council has the power to decide which concerns, products, services, or business transactions would need GST registration
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What is meant by Casual Taxable Person?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            It means a person who operates in a taxable territory only occasionally but has no fixed place of business. A Casual taxable person is one who has a registered business in some State in India but wants to supply to some other site in which he/she does not have any fixed place of business. He needs to register in the State from where he is looking to supply as a Casual taxable person.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        Who is Non-resident Taxable Person?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            A taxable person, with no fixed place of business in India. This person resides abroad and undertakes transactions in India, only occasionally.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What provisions are applicable for Non-Resident and Casual Tax-payers?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            <ul>
+                                <li class="material">They have to apply for registration at least 5 days prior to making any supply.</li>
+                                <li class="material">Their registration certificate is valid for 90 days which can be extended. </li>
+                                <li class="material">Registration is given or extended only when the person deposits the estimated tax liability.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What are transactions under the GST Act?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            The supply of Goods and/or Services, That is, all the transactions, such as the sale, transfer, barter, rental, exchange, license, lease or disposal made, or agreed to be made, for consideration of taxable goods or services, are considered taxable transactions under the GST Act.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What is the validity of the GSt Registration Number?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            GST certificate is granted for the lifetime of the business unless canceled, suspended, revoked or surrendered.
+                        <br><br>
+                        Only those certificates, as issued to the Casual taxable person, and Non-Resident taxable persons have a validity period fixed by the Authorities.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        Who is an Input Service Distributer or ISD?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            ISD is like a head office that receives the tax invoices of input service. And assigns the credit of tax paid by them to the units proportionately. The ISD registration is somewhat different from the normal registration.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What is the Reverse Charge Mechanism and when is it applicable?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            When the beneficiary settles the Government obligation rather than the provider. Usually, because the supplier is selling goods, the tax is levied upon the supplier. However, in certain cases, the tax is levied upon the buyer. And the buyer pays GST directly to the government. This is called a reverse charge. Under this, the responsibility to pay tax gets reversed.
+                        <br><br>
+                        The applicability of RCM is when the supplier is not registered with GST and is making a supply to a GST registered taxpayer. In such a situation, the registered taxpayer is required to remit the applicable GST as a reverse charge to the government.
+                        The government has also notified a list on which the reverse charge will be applicable.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What is a compliance rating?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            The GST compliance rating is a rating based on performance & compliance. It is given to all registered taxpayers. The taxpayer is rated based on his adherence to the GST provisions. The rating system is devised on a scale of 1 to 10, based on the type of business. Here, 10 is the most compliant and 1 being the least compliant. Your buyer would prefer to work with as seller with the highest rating.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What is HSN?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            Harmonised System of Nomenclature (HSN) code is used for the classification of goods. A 2-digit code is to be used, in the invoices, by the Taxpayers with a turnover of above Rs. 1.5 crores but below Rs. 5 crores. While the taxpayers whose turnover is over Rs. 5 crores are to use 4-digit code. Taxpayers with turnover below Rs. 1.5 crores are not required to mention any HSN Code. Services are classified in the Services Accounting Code (SAC).
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        How to choose HSN or SAC Code during GST registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            HSN (Harmonized System of Nomenclature) or SAC (Services Accounting Code) refers to Goods and Services code. It is a code given to a product of detailed classification under the GST Act. With LegalRaasta, our expert CAs will help you choose the correct HSN or SAC Code after getting details about your business.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What is meant by Destination Based Tax?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            GST is accrued in the state where the final consumption of the product/service is taking place. So that the final consumer bears the tax. And the tax amount is submitted to the State government, where this final consumer is based.
+                        <br><br>
+                        It is imposed at each stage of sale or purchase of goods or services based on the input tax credit method.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What is Dual GST?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            In India, Dual GST has been implemented. That means both the Centre and State governments levy it, simultaneously, on a common tax base. The entities providing an intra-state supply of goods and/or services are to apply GST under the Central GST by the Centre. And the businesses operating within one state are to pay SGST (or the State GST). And the Integrated GST (or the IGST) is being levied and administered by the Centre on every inter-state supply of goods and services.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        When is Multiple GST registration required?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            If an entity operates from more than one state, then a separate GST registration is required for each state. For example, a sweet vendor sells in U.P. and Delhi. He needs to have dual GST registration in U.P. and Delhi, respectively. A business with multiple business verticals in a state may obtain a separate registration for each vertical.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        Do I need to file GST Returns if I have applied for GST Registration voluntarily?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            Every entity registered under GST, whether mandatorily or voluntarily, is to file the relevant GST Returns in the manner prescribed and within the time limit prescribed for the same.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        Do I need to visit GST office with my documents for any verification?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            No. With TaxStand, all process is completely online. In 4 simple steps. And you don’t need to visit any kind of govt office.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        Can we apply GST for our Firm or Brand Name?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            Yes. GST Registration requires one legal entity name. So if you are registered as a proprietorship firm then you can provide your firm name. There are no name guidelines while applying for the GST registration.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        Do I need a Commercial Address to apply for GST?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            No. Businesses operating from a residential address can also be registered with the GST. Only the proof of address like electricity bill copy with the NOC or sale deed or rent agreement copy etc. is required.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        Is a bank account required for the GST?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            Yes. But it doesn’t need to be a current account. It can also be a savings bank account or personal bank account. If the business has just started and only a personal savings account is there, then you can provide the same. And once you are registered, you can apply for the new current bank account based on the GST Certificate.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What if my turnover is less than the limit limit prescribed?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            Below categories of suppliers are to apply to GST number compulsorily, irrespective of turnover:
+                        <br><br>
+                        <ul>
+                            <li class="material">If you are involved in interstate supplies,</li>
+                            <li class="material">You are a Casual taxable person or a Non-Resident taxable person,</li>
+                            <li class="material">You are liable to pay tax under Reverse Charge Mechanism (RCM),</li>
+                            <li class="material">You are supplying on behalf of a taxable person,</li>
+                            <li class="material">Input service distributor (ISD),</li>
+                            <li class="material">Selling on e-commerce platforms,</li>
+                            <li class="material">You are an e-commerce operator,</li>
+                            <li class="material">You supply online information and database access or retrieval services from outside India to an unregistered person in India,</li>
+                            <li class="material">You are responsible for deducting TDS</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        How is the tax to be collected at source for e-commerce operations?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            All e-commerce operators shall collect the tax at source at the time of credit or at the time of payment, whichever is earlier.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        Can a person not registered with GST collect GST?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            No. An unregistered person is not allowed to collect GST.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What is Aggregate Turnover?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            Aggregate turnover is the total value of all taxable supplies, exempt supplies, the export of goods or services or both, and inter-State supplies of a company with the same PAN. Aggregate turnover does not include CGST, IGST, SGST, and GST cess.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What is GSTN?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            Goods & Service Tax Network (GSTN) was set up to cater to the needs of GST. The objective was to implement a shared IT infrastructure and services to Central and State Governments, tax-payers and other stakeholders for implementing GST. The functions of the GSTN include:</p>
+                        <ul>
+                            <li class="material">ease registration of GST online,</li>
+                            <li class="material">computing and settling IGST,</li>
+                            <li class="material">forwarding the taxes to Central and State authorities,</li>
+                            <li class="material">matching tax payment items with the banking system,</li>
+                            <li class="material">providing MIS reports to the Central and the State Governments based on the return information,</li>
+                            <li class="material">running the network for reversal and reclaim of the input tax credit.</li>
+                        </ul>
+                        <p class="material">A non-government firm by the name of National Securities Depository Limited (NSDL) has been tasked with creating the Network.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        Which businesses require Digital Signature for GST registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            DSC is required only for the private limited company or OPC (one person company) or LLP (limited liability partnership), etc. Proprietorship or partnership firms do not require DSC.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        Who is the Primary Authorized Signatory?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            Primary Authorized Signatory is the person who is primarily responsible to act as the GST System Portal on behalf of the taxpayer. It can be one of the promoters of the business or any person nominated by them.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        Can the tax paid in one State by used an ITC in another state by the same company?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            No. If a company is registered in more than one state, then each such registration will be treated as a separate registered person. Cross-utilization of ITC is not available for two different registered persons.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What is GST Return?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            GST return is a document containing details of income which a taxpayer is required to file with the GST authorities. This helps tax authorities calculate tax liability.
+                        Under GST, a registered dealer has to file GST returns that include:</p>
+                        <ul>
+                            <li class="material">Purchases,</li>
+                            <li class="material">Sales,</li>
+                            <li class="material">Output GST (i.e. GST on sales),</li>
+                            <li class="material">Input tax credit (GST paid on purchases).</li>
+                        </ul>
+                        <p class="material">To file GST returns, only those sales and purchase invoices, that are GST compliant, are required. You can use our pocket-friendly GST Software to generate these GST compliant invoices.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        Am I required to file GST return even if no business was conducted in that particular period?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            Yes. Once you are registered, you need to file every GSTR applicable. In case of no transactions, then a Nil GSTR is filed.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What if I want to cancel my GST registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            It can be canceled in certain cases:
+                        </p>
+                        <ul>
+                            <li class="material">Voluntary Cancelation: When the tax-payer voluntarily cancels his or her GST registration.
+                                <ul>
+                                    <li class="material">When he/she has reasons to believe that in the current financial year, the annual turnover will be less than Rs. 40/20 Lakh,</li>
+                                    <li class="material">The business operations have ceased to exist or have done amalgamation or any other arrangement.</li>
+                                </ul>
+                            </li>
+                            
+                            <li class="material">When the GST officer uses his power and cancels the certificate of the tax-payer. It may be because of the below reasons -
+                                <ul>
+                                    <li class="material">If the tax-payer is not doing business from his/her notified registered place,</li>
+                                    <li class="material">If the tax-payer issues a tax invoice without making the supply of goods or services.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        How to cancel GST registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            GST registration cancellation is an online process.
+                        </p>
+                        <ul>
+                            <li class="material">You need to file Form Reg-16.</li>
+                            <li class="material">Apply on the official GST website within 30 days.</li>
+                            <li class="material">You will have to declare some important information in the application such as stock held on a particular date, amount of dues, credit reversal, and information about the payment made towards the discharge of liabilities.</li>
+                            <li class="material">If the concerned officer is satisfied with the application and documents, the officer will cancel the same within 30 days.</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        Taxation of Imports under GST?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            All Imports are treated as inter-state supplies and IGST is levied. The destination principle is followed and the tax revenue accrues to the State where the imported goods and services are consumed. GST paid on the imports is completely set-off, though.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What taxes will be levied on import of goods?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            Customs duty and cess (as applicable) + GST compensation cess + IGST. IGST and GST compensation cess are to be paid after adding all customs duty and customs cess to the value of imports.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        Taxation of Exports under GST?registration?
+                    </div>
+                    <div class="content">
+                        <p>
+                            All exports are treated as zero-rated supplies. Exporters of goods and/or services, with GST registration, don’t need to pay any tax on their export. Still, a credit of input tax credit will be available and the same is available as a refund to them. They can either pay tax on the output and claim a refund of IGST or export under Bond without paying IGST and claim a refund of Input Tax Credit (ITC).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const items = document.querySelectorAll(".accordion > .accordion-item > .toggle_title");
+
+        function toggleAccordion(){
+            this.classList.toggle('active');
+            this.nextElementSibling.classList.toggle('active');
+        }
+
+        items.forEach(item => item.addEventListener('click', toggleAccordion));
+    </script>
+</body>
+</html>

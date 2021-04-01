@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+body{
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {box-sizing: border-box;}
+
+.dropdown{
+    margin: 0 auto;
+}
+
+nav{
+    height: 70px;
+    background: white;
+}
+
+.logo{
+    padding: 5px 0 0 70px;
+    width: 200px;
+    height: auto;
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 100px;
+    margin-top: 5px;
+}
+
+nav ul li{
+    background: white;
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    
+}
+
+nav ul li a{
+    display: block;
+    padding: 0 -15px;
+    color: #3498db;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 0px 12px;
+
+}
+
+nav ul li a:hover{
+    background: #243342;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul ul{
+    position: absolute;
+    top: 50px;
+    display: none;
+}
+
+nav ul li:hover > ul{
+    display: block;
+}
+
+nav ul ul li{
+    width: 230px;
+    float: none;
+    display: list-item;
+    position: relative;
+    z-index: 9999;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.2);
+}
+
+nav ul ul li a{
+    font-size: 15px;
+}
+
+nav ul ul ul li{
+    width: 220px;
+    float: none;
+    display: list-item;
+    position: relative;
+    margin-left: 230px;
+    top: -57px;
+}
+
+nav ul ul li i{
+    margin-left: 140px;
+    position: relative;
+}
+
+.show, .icon,
+header input{
+    display: none;
+}
+
+.x{
+    height: 90vh;
+}
+
+@media (max-width: 1055px){
+    label.logo{
+        padding-left: -40px;
+    }
+
+    nav ul li a{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 947px){
+    .icon{
+        font-size: 30px;
+        color: #60b4df;
+        float: right;
+        line-height: 60px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: block;
+    }
+
+    nav .logo{
+        margin-left: -25px;
+    }
+
+    nav ul{
+        margin-right: 0px;
+        float: left;
+        
+        width: 100%;
+    }
+
+    nav ul li, nav ul ul li{
+        top: -5px;
+        display: block;
+        z-index: 9999;
+        width: 100%;
+    }
+
+    nav ul ul{
+        margin-top: -20px;
+        margin: -10px;
+        position: static;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+        border-top: none;
+
+    }
+
+    nav ul ul ul li{
+       
+        position: static;
+        display: block;
+    }
+
+    
+
+    .show{
+        display: block;
+        color: #3498db;
+        cursor: pointer;
+        padding: 0 10px;
+        line-height: 50px;
+    }
+
+    .show #xd{
+        margin-left: 10px;
+    }
+
+    nav ul ul li a{
+        padding-left: 40px;
+    }
+
+    nav ul ul ul li a{
+        margin-left: -210px;
+    }
+
+    .show + a, ul{
+        display: none;
+    }
+
+    [id^=btn]:checked + ul{
+        display: block;
+    }
+
+    .x{
+        height: 400px;
+    }
+}
+
+@media (max-width: 600px){
+    .x{
+        height: 250px;
+    }
+}
+
+/*Footer*/
+
+
+.y{
+    background: rgb(206, 206, 205);
+}
+
+
+.text-md-right {
+    text-align: right;
+    font-size: 15px;
+}
+
+
+
+
+/*Email input*/
+
+
+.form-control{
+    height: 110%;
+    padding: -2px;
+}
+
+.news{
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.jumbotron{
+    margin-bottom: -10px;
+    height: auto;
+    padding-top: 45px;
+}
+
+/* Main Part */
+
+.row{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.heading{
+    background-image: linear-gradient(#18161675, #18161675),url(../photos/audit.jpg);
+    background-position: center;
+    background-size: cover;height: 30vh;
+}
+
+
+
+.heading .content{
+    position: absolute;
+    top: 20%;
+    left: 43.5%;
+}
+
+.heading .content h1{
+    color: rgb(238, 238, 238);
+}
+
+.main-part{
+    margin-top: 40px;
+}
+
+.main-part p{
+    text-align: justify;
+    font-size: 110%;
+}
+
+
+/* Core Team */
+
+#coreteam-heading{
+    background-image: linear-gradient(#18161675, #18161675),url(../photos/team.jpg);
+    background-position: center;
+    background-size: cover;height: 30vh;
+}
+
+.coreteam{
+    margin-top: 45px;
+}
+
+.coreteam .coreteam-content h2
+{
+    text-align: center;
+}
+
+.coreteam .coreteam-content p{
+    text-align: center;
+    font-size: 110%;
+}
+
+/* Careers */
+
+#careers{
+    background-image: linear-gradient(#18161675, #18161675),url(../photos/careers.jpg);
+    background-position: center;
+    background-size: cover;height: 30vh;
+}
+
+/*  Team Members   */
+
+.coreteam .card .card-body h3,
+.coreteam .card .card-body h5,
+.coreteam .card .card-body p{
+    text-align: center;
+}
+
+.coreteam .card .card-body img{
+    margin-left: 25%;
+}
+
+
+.coreteam .card .card-body .btn{
+    margin-left: 32%;
+}
+
+
+/* Audit and Assurance */
+
+#auditandassurance .content {
+    margin-left: -6%;
+}
+
+
+
+/*  Business Process Outsourcing Services  */ 
+
+#businessprocess .content{
+    margin-left: -17%;
+}
+
+#businessprocess{
+    background-image: linear-gradient(#18161675, #18161675),url(../photos/business.jpg);
+    background-position: center;
+    background-size: cover;height: 30vh;
+}
+
+/* Secretarial Compliances */
+
+#secretarial .content{
+    margin-left: -6%;
+}
+
+#secretarial{
+    background-image: linear-gradient(#18161675, #18161675),url(../photos/secretarial.jpg);
+    background-position: center;
+    background-size: cover;height: 30vh;
+}
+
+/* Contact Form */
+
+.contact-section{
+    margin-top: 45px;
+    height: 400px;
+}
+
+#contact{
+    background-image: linear-gradient(#18161675, #18161675),url(../photos/contact-us.jpg);
+    background-position: center;
+    width: auto;
+    background-size: cover;height: 30vh;
+}
+
+#contact .content{
+    margin-left: -1%;
+}
+
+.contact-section .row .col-md-4 h3,
+.contact-section .row .col-md-4 p{
+    text-align: left;
+}
+
+.contact-section .row .col-md-4{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.contact-section .row .col-md-4 ul li{
+    list-style: upper-latin;
+}
+
+.query-form-section{
+    margin-top: 50px;
+}
+
+.query-form-section .form-signup{
+    max-width: 1148px;
+    margin: 0 auto;
+}
+
+.query-form-section h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.query-form-section p{
+    font-size: 110%;
+}
+
+
+/* Industries */
+
+.industries-section{
+    margin-top: 45px;
+    margin-bottom: 45px;
+    color: #ffffff;
+}
+
+
+
+#industries{
+    background-image: linear-gradient(#1816168f, #1816168f),url(../photos/industries.jpg);
+    background-position: center;
+    width: auto;
+    background-size: cover;height: 30vh;
+}
+
+.principal{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.industries-section > .col-sm-3{
+    background-image: linear-gradient(#181616af, #181616af),url(../photos/industries.jpg);
+    background-position: center;
+    width: auto;
+    background-size: cover;
+    height: 200px;
+    padding: 5px;
+    background-clip: padding-box;
+    border: 10px solid transparent;
+    transition: 5s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+
+
+/* GST Return Form */
+
+.gstreturnform-section{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.gstreturnform-section .gstreturnform{
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid #243342;
+}
+
+.gstreturnform-section .gstreturnform .gstreturnforminner {
+    padding-top: 40px;
+}
+
+.gstreturnform-section .gstreturnform .gstreturnforminner label{
+    font-size: 90%;
+}
+
+.gstreturnform-section .gstreturnform .gstreturnforminner .row h1{
+    margin-left: 2%;
+}
+
+.gstreturnform-section .gstreturnform .gstreturnforminner .rowa {
+    font-size: 80%;
+}
+
+.gstreturnform-section .gstreturnform .gstreturnforminner form h2{
+    font-size: 130%;
+    margin-left: 2%;
+}
+
+.gstreturnform-section .gstreturnform .gstreturnforminner progress{
+    width: 100%;
+    margin: 1px 0 0 0;
+    height: 30px;
+
+}
+
+.gstreturnform-section .gstreturnform .gstreturnforminner .progress{
+    width: 77%;
+    margin: 1px 2% 0 12%;
+    height: 30px;
+
+}
+
+.gstreturnform-section .gstreturnform form{
+    margin-bottom: 45px;
+}
+
+.gstreturnform-section .gstreturnform .gstreturnforminner select{
+    width: 100%;
+    padding: 7px 0;
+    border-radius: 4px;
+}
+
+.gstreturnform-section .gstreturnform .gstreturnforminner .radiobutton input{
+    z-index: 9999;
+}
+
+footer > #gstreturnform{
+    margin-top: 85px;
+}
+
+
+/* Admin */
+
+.admin-portal-signup-section{
+    margin-top: 8%;
+}
+
+.admin-portal-signup-section .one-section{
+    width: 40%;
+    margin: auto auto;
+    background-color: #345d80;
+    height: 80%;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.2);
+}
+
+.admin-portal-signup-section .second-section{
+    padding-top: 5%;
+    padding-bottom: 6%;
+}
+
+.admin-portal-signup-section .second-section > form label,
+.admin-portal-signup-section .second-section > form h1{
+    color: #ffffff;
+} 
+
+
+.admin-portal-signup-section .second-section > form input[type=submit]
+{
+    padding: 8px 30px;
+    width: 108%;
+    border-radius: 3px;
+    box-shadow: 1px 2px 2px #080358;
+    cursor: pointer;
+    font-weight: 500;
+    color: #040038;
+    font-size: 19px;
+    background-color: #ddd;
+}
+
+.admin-portal-signup-section .second-section > form input[type=submit]:hover,
+.admin-portal-section .admin-portal-one-section .admin-portal-second-section .row input[type=submit]:hover{
+    background-color: #030027;
+    color: #ffffff;
+}
+
+.main-part-admin-portal  .row > table th{
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 13px 0px;
+}
+
+.main-part-admin-portal > .row > table td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size: 70%;
+}
+  
+.main-part-admin-portal > .row > table  tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+.main-part-admin-portal h2:after{
+    display: block;
+    height: 3px;
+    background-color: #080358;
+    content: " ";
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+.admin-portal-section{
+    margin-top: 5%;
+}
+
+.admin-portal-section .admin-portal-one-section{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.admin-portal-section .admin-portal-one-section .admin-portal-second-section{
+    padding: 0 3%;
+}
+
+.admin-portal-section .admin-portal-one-section .admin-portal-second-section .row .col-sm-6{
+    padding-top: 1%;
+}
+
+.admin-portal-section .admin-portal-one-section .admin-portal-second-section .row input[type=submit]
+{
+    padding: 2% 0;
+    width: 90%;
+    border-radius: 3px;
+    box-shadow: 1px 2px 2px #080358;
+    cursor: pointer;
+    font-weight: 500;
+    color: #040038;
+    font-size: 19px;
+    background-color: #ddd;
+}

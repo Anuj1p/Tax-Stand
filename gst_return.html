@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://kit.fontawesome.com/5096c7feb4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/GSTReturn.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <title>GST Return</title>
+</head>
+<body>
+
+    <header class="gst-registration">
+        <div class="row registration clearfix">
+            <div class="col span-1-of-2 box">
+                <h1>Easily manage GST return filing with Tax Stand</h1>
+                <hr>
+                <h3>Register for GST online for Free* and stay ahead on GST Compliance!</h3>
+
+                <br><br>
+                <p>Also See : 
+                    <a href="/gst_registration"><button>GST Registration</button></a>
+                    <a href="/"><button>Home</button></a>
+                </p>
+            </div>
+
+            <div class="col span-1-of-2 box">
+                <div class="registration-form-GST">
+                    <h1>GST RETURN</h1>
+                    <form action="/gst_return" method="post" class="contact-form">
+                        <div class="form">
+                            <div class="col span-1-of-3">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                            </div>
+                        </div>
+
+                        <div class="form">
+                            <div class="col span-1-of-3">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+
+                        <div class="form">
+                            <div class="col span-1-of-3">
+                                <label for="phone">Phone No.</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="phone" id="phone" placeholder="Your Phone No." required>
+                            </div>
+                        </div>
+
+                        <div class="form">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <!-- <a href="/"><button>Start Return Filing</button></a> -->
+                                <a href="/gst_return/gstreturnform"><input type="submit" value="Start Return Filing"></a>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section>
+        <div class="row">
+            <h2>Types of GST Return</h2>
+            <div class="next-content">
+                <br>
+                <table class="table">
+                    <tr>
+                        <th>Return Form</th>
+                        <th>Particulars</th>
+                        <th>Frequency</th>
+                        <th>Due Date</th>
+                    </tr>
+
+                    <tr>
+                        <td>GSTR-1</td>
+                        <td>Details of outward supplies of goods and services</td>
+                        <td>Monthly</td>
+                        <td>11th of the next month</td>
+                    </tr>
+
+                    <tr>
+                        <td>GSTR-2</td>
+                        <td>Details of inward supplies of goods and services affected</td>
+                        <td>Monthly</td>
+                        <td>15th of the next month</td>
+                    </tr>
+
+                    <tr>
+                        <td>GSTR-3</td>
+                        <td>Monthly return, in the case of finalization of details of outward supplies and inward supplies along with the payment of tax.</td>
+                        <td>Monthly</td>
+                        <td>20th of the next month</td>
+                    </tr>
+
+                    <tr>
+                        <td>GSTR-3B</td>
+                        <td>It is a simple return in which the summary of outward supplies along with Input Tax Credit is declared and payment of tax is affected by the taxpayer.</td>
+                        <td>Monthly</td>
+                        <td>20th of the next month</td>
+                    </tr>
+
+                    <tr>
+                        <td>GSTR-4</td>
+                        <td>For all the taxable person registered under the composition levy</td>
+                        <td>Quarterly</td>
+                        <td>18th of the next month after the quarter</td>
+                    </tr>
+
+                    <tr>
+                        <td>GSTR-5</td>
+                        <td>Returns for a non-resident foreign taxable person</td>
+                        <td>Monthly</td>
+                        <td>20th of the next month</td>
+                    </tr>
+
+                    <tr>
+                        <td>GSTR-6</td>
+                        <td>Returns for an input service distributor</td>
+                        <td>Monthly</td>
+                        <td>13th of the next month</td>
+                    </tr>
+
+                    <tr>
+                        <td>GSTR-7</td>
+                        <td>Returns for authorities deducting TDS</td>
+                        <td>Monthly</td>
+                        <td>10th of the next month</td>
+                    </tr>
+
+                    <tr>
+                        <td>GSTR-8</td>
+                        <td>Details of supplies effected through the e-commerce operator and the amount of tax collected</td>
+                        <td>Monthly</td>
+                        <td>10th of the next month</td>
+                    </tr>
+
+                    <tr>
+                        <td>GSTR-9</td>
+                        <td>Annual return for a normal taxpaye</td>
+                        <td>Annually</td>
+                        <td>31st December of the next financial year</td>
+                    </tr>
+
+                    <tr>
+                        <td>GSTR-9A</td>
+                        <td>Annual return of a taxpayer registered under the composition levy anytime during the year</td>
+                        <td>Annually</td>
+                        <td>31st December of the next financial year</td>
+                    </tr>
+
+                    <tr>
+                        <td>GSTR-10</td>
+                        <td>Final return</td>
+                        <td>Only once, when GST registration is cancelled or surrendered</td>
+                        <td>Within 3 months of the date of cancellation or the date of cancellation of order, whichever is later</td>
+                    </tr>
+
+                    <tr>
+                        <td>GSTR-11</td>
+                        <td>Details of inward supplies to be furnished by a person having UIN and claiming a refund</td>
+                        <td>Monthly</td>
+                        <td>28th of the following month for which the statement is filed</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="row">
+            <h2>Eligibility for return filing</h2>
+            <div class="next-content">
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Registered persons taxable under GST has to file 3-monthly returns and 1-annual returns.</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;But all the businesses who has not exceeded the exempted limit, which is Rs.2 lakhs all over India and Rs.10 lakhs in Northeastern and Hill States, is not eligible.</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;All those businesses that exceed this limit, needs to file GST return</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;This should be applicable, even if an entity makes no sale during a given year in the form of NIL returns.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="row">
+            <h2>Steps for filing GST Return</h2>
+            <div class="next-content">
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;To file for the GST return, one has to first visit our website: www.taxstand.com</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Then, click on the ‘tax’ tab and under GST column, click on the GST return button.</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;After this, you have to feed in your name, email id and mobile number.</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Then, click on add company, where you need to feed in GSTN, GSTN password, GSTIN, Date of GST registration, select your type of entity and some other basic details.</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;The next step would be to upload the data about your sale & purchases and select the type of file you have accounts in. It could be tally, excel or busy.</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Match in your data and click on the save button.</p>
+                <p><i class="fas fa-angle-right"></i>&nbsp;&nbsp;&nbsp;Finally you can save the data on our portal. You can either use OTP (one-time password) or captcha.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-procedure">
+        <div class="row">
+            <p>
+                <img src="photos/GST-Return-Procedure.png" style="height: 900px; text-align: center;">
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="row">
+            <h2>Required Details for Filing GST Return</h2>
+            <div class="next-content">
+                <p style="text-align: center;">
+                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT-v7W5RP3D0tQO7wST4pblfhhsA0L0O0TqBima6MZ2-MhQqfxa-97wE0vBJjFPoMiVgFam0-Oa2Lg3/embed?start=false&loop=true&delayms=30000" frameborder="0" width="700" height="410" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-documents">
+        <div class="row">
+            <h2>Documents Required for GST Returns</h2>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-4 documents-required">
+                <div class="margin-for-documents">
+                    <div class="icons-heading">
+                        <div class="icon">
+                            <i class="fas fa-hand-pointer"></i>
+                        </div>
+    
+                        <div class="heading">
+                            <h3>GSTR-1</h3>
+                        </div>
+                    </div>
+    
+                    <div class="clearfix">
+    
+                    </div>
+    
+                    <div class="heading-material">
+                        <ul>
+                            <li>GSTIN</li>
+                            <li>Legal Name of the registered person</li>
+                            <li>Previous financial year’s aggregate turnover</li>
+                            <li>Taxable outward supplies to a registered person</li>
+                            <li>Taxable outward supplies to a consumer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col span-1-of-4 documents-required">
+                <div class="margin-for-documents">
+                    <div class="icons-heading">
+                        <div class="icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+    
+                        <div class="heading">
+                            <h3>GSTR-1</h3>
+                        </div>
+                    </div>
+    
+                    <div class="clearfix">
+    
+                    </div>
+    
+                    <div class="heading-material">
+                        <ul>
+                            <li>GSTIN</li>
+                            <li>Legal Name of the registered person</li>
+                            <li>Previous financial year’s aggregate turnover</li>
+                            <li>Taxable outward supplies to a registered person</li>
+                            <li>Taxable outward supplies to a consumer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col span-1-of-4 documents-required">
+                <div class="margin-for-documents">
+                    <div class="icons-heading">
+                        <div class="icon">
+                            <i class="fas fa-piggy-bank"></i>
+                        </div>
+    
+                        <div class="heading">
+                            <h3>GSTR-1</h3>
+                        </div>
+                    </div>
+    
+                    <div class="clearfix">
+    
+                    </div>
+    
+                    <div class="heading-material">
+                        <ul>
+                            <li>GSTIN</li>
+                            <li>Legal Name of the registered person</li>
+                            <li>Previous financial year’s aggregate turnover</li>
+                            <li>Taxable outward supplies to a registered person</li>
+                            <li>Taxable outward supplies to a consumer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col span-1-of-4 documents-required">
+                <div class="margin-for-documents">
+                    <div class="icons-heading">
+                        <div class="icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+    
+                        <div class="heading">
+                            <h3>GSTR-1</h3>
+                        </div>
+                    </div>
+    
+                    <div class="clearfix">
+    
+                    </div>
+    
+                    <div class="heading-material">
+                        <ul>
+                            <li>GSTIN</li>
+                            <li>Legal Name of the registered person</li>
+                            <li>Previous financial year’s aggregate turnover</li>
+                            <li>Taxable outward supplies to a registered person</li>
+                            <li>Taxable outward supplies to a consumer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-4 documents-required">
+                <div class="margin-for-documents">
+                    <div class="icons-heading">
+                        <div class="icon">
+                            <i class="fas fa-user-alt"></i>
+                        </div>
+    
+                        <div class="heading">
+                            <h3>GSTR-1</h3>
+                        </div>
+                    </div>
+    
+                    <div class="clearfix">
+    
+                    </div>
+    
+                    <div class="heading-material">
+                        <ul>
+                            <li>GSTIN</li>
+                            <li>Legal Name of the registered person</li>
+                            <li>Previous financial year’s aggregate turnover</li>
+                            <li>Taxable outward supplies to a registered person</li>
+                            <li>Taxable outward supplies to a consumer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col span-1-of-4 documents-required">
+                <div class="margin-for-documents">
+                    <div class="icons-heading">
+                        <div class="icon">
+                            <i class="fas fa-hand-pointer"></i>
+                        </div>
+    
+                        <div class="heading">
+                            <h3>GSTR-1</h3>
+                        </div>
+                    </div>
+    
+                    <div class="clearfix">
+    
+                    </div>
+    
+                    <div class="heading-material">
+                        <ul>
+                            <li>GSTIN</li>
+                            <li>Legal Name of the registered person</li>
+                            <li>Previous financial year’s aggregate turnover</li>
+                            <li>Taxable outward supplies to a registered person</li>
+                            <li>Taxable outward supplies to a consumer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col span-1-of-4 documents-required">
+                <div class="margin-for-documents">
+                    <div class="icons-heading">
+                        <div class="icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+    
+                        <div class="heading">
+                            <h3>GSTR-1</h3>
+                        </div>
+                    </div>
+    
+                    <div class="clearfix">
+    
+                    </div>
+    
+                    <div class="heading-material">
+                        <ul>
+                            <li>GSTIN</li>
+                            <li>Legal Name of the registered person</li>
+                            <li>Previous financial year’s aggregate turnover</li>
+                            <li>Taxable outward supplies to a registered person</li>
+                            <li>Taxable outward supplies to a consumer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col span-1-of-4 documents-required">
+                <div class="margin-for-documents">
+                    <div class="icons-heading">
+                        <div class="icon">
+                            <i class="fas fa-piggy-bank"></i>
+                        </div>
+    
+                        <div class="heading">
+                            <h3>GSTR-1</h3>
+                        </div>
+                    </div>
+    
+                    <div class="clearfix">
+    
+                    </div>
+    
+                    <div class="heading-material">
+                        <ul>
+                            <li>GSTIN</li>
+                            <li>Legal Name of the registered person</li>
+                            <li>Previous financial year’s aggregate turnover</li>
+                            <li>Taxable outward supplies to a registered person</li>
+                            <li>Taxable outward supplies to a consumer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-4 documents-required">
+                <div class="margin-for-documents">
+                    <div class="icons-heading">
+                        <div class="icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+    
+                        <div class="heading">
+                            <h3>GSTR-1</h3>
+                        </div>
+                    </div>
+    
+                    <div class="clearfix">
+    
+                    </div>
+    
+                    <div class="heading-material">
+                        <ul>
+                            <li>GSTIN</li>
+                            <li>Legal Name of the registered person</li>
+                            <li>Previous financial year’s aggregate turnover</li>
+                            <li>Taxable outward supplies to a registered person</li>
+                            <li>Taxable outward supplies to a consumer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="row">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion">
+
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What is GST Return?
+                    </div>
+                    <div class="content">
+                        <p>
+                            GST return is a document that contains the details of the income of the taxpayer. This document needs to be filed with the tax authorities.
+                        </p>
+                    </div>
+                </div>
+
+               <div class="accordion-item">
+                <div class="toggle_title toggle_active">
+                    How to file for GST Return?
+                </div>
+                    <div class="content">
+                        <p>
+                            One can file GST return using by availing our assisted plans for normal taxpayers, other taxpayers or e-commerce tax plan.
+                        </p>
+                    </div>
+                </div>
+
+                 <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        How much does it cost to file this GST return?
+                    </div>
+                    <div class="content">
+                        <p>
+                            Charges for it are as follows:
+                            <br><br>
+                            We have assisted plans for normal taxpayers and it ranges from a basic plan worth Rs.1,350 per month, Medium plan worth Rs.1,999 per month, or the enterprise plan worth Rs.3,599 per month.
+                            <br><br>
+                            We also provide assisted plans for other taxpayers and the price range for it is Rs.799 for the compounding scheme, Rs.3,500 for TDS, Rs.5,599 for ISD, and Rs.3,599 for the non-resident taxpayer.
+                            <br><br>
+                            Along with this, we also have an e-commerce portal that helps the e-commerce companies to file the return which costs you Rs.2,200 per month.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What is the process to file GST Return?
+                    </div>
+                    <div class="content">
+                        <p>
+                            <ul>
+                                <li>To file for the GST return, one has to first visit our website: www.taxstand.com</li>
+                                <li>Then, click on the ‘tax’ tab, and under the GST column, click on the GST return button.</li>
+                                <li>After this, you have to feed in your name, email id, and mobile number.</li>
+                            </ul>>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What is the late fees for not filling returns on time?
+                    </div>
+                    <div class="content">
+                        <p>
+                            You will be liable to pay interest and a fee for not filing the return on time. There is 18% interest per annum. The base for this interest is the amount of outstanding tax to be paid. It should be done from the next day of filing to the date of payment.
+                            <br><br>
+                            There is also a late fee, which is Rs.100 per day as per the GST Act. It is Rs.100 under CGST and Rs.100 under SGST, so the total is Rs.200. The maximum amount that can be levied is Rs.5,000. IGST is exempted from a late fee.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What are the types of GST Return?
+                    </div>
+                    <div class="content">
+                        <p>
+                            The following are the types of GST returns:
+                            <ul>
+                                <li>GSTR-1 for the monthly return of the outward supplies</li>
+                                <li>GSTR-2 for the monthly return of the inward supplies</li>
+                                <li>GSTR-3 for the monthly return containing the details of the taxpayers from the other forms such as GSTR-1, GSTR-2, GSTR-6, GSTR-7)</li>
+                                <li>GSTR-4 for the quarterly return</li>
+                                <li>GSTR-5 for the variable return to be filed by the non-resident taxpayer</li>
+                                <li>GSTR-6 for the monthly return to be filed by the input service distributor</li>
+                                <li>GSTR-7 for the monthly return to be filed for the Tax Deducted at Source (TDS)</li>
+                                <li>GSTR-8 for the monthly return to be filed by e-commerce operator</li>
+                                <li>GSTR-9 for the annual return</li>
+                                <li>GSTR-10 for the final return paid before terminating business activities permanently</li>
+                                <li>GSTR-11 for the taxed to be paid by the taxpayers with a Unique Identification Number (UIN)</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        Should e-commerce operator need to file a return seperately?
+                    </div>
+                    <div class="content">
+                        <p>
+                            A- Yes, all e-commerce portals that allows other producers and sellers to use their portal should file the return using the GSTR-8. If you use your own portal, you don’t need to file this return.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What is the purpose of filling GST Return?
+                    </div>
+                    <div class="content">
+                        <p>
+                            The benefits or purpose of filing GST return are multiple
+                            <ul>
+                                <li>It is used to finalize the tax liabilities of the taxpayer within the stipulated period.</li>
+                                <li>Furthermore, is provides necessary inputs for taking policy decisions.</li>
+                                <li>Information on mode of transfer to tax administration.</li>
+                                <li>It is easier to manage audit and anti-tax evasion programs of tax administration.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        Who is eligible to file Annual return?
+                    </div>
+                    <div class="content">
+                        <p>
+                            Businesses who file for GSTR-1 to 3, other than casual taxpayers and taxpayers under composition scheme are required to file annual return.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        Which parts are auto populated in GSTR-2 from GSTR-1?
+                    </div>
+                    <div class="content">
+                        <p>
+                            A large part is auto populated from GSTR-1 to the GSTR-2 but still some information needs to be fed into GSTR-2. Like the details of imports, details of purchases from non-registered or composition suppliers and exempt/non-GST/nil GST supplies etc.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        Does one need to attach the scanned copy of invoices along with GSTR-1?
+                    </div>
+                    <div class="content">
+                        <p>
+                            No, but certain fields of the information from the invoices needs to be uploaded.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        What is the periodicity of the GST Return filling?
+                    </div>
+                    <div class="content">
+                        <p>
+                            It completely depends upon the type of registration and transactions. Different periods have been specified for this.
+                            <ul>
+                                <li>Monthly returns needs to be filed by the regular taxpayers, foreign non-residents, input service provider, tax deductors and e-commerce operators.</li>
+                                <li>Quarterly returns needs to be filed by the composition taxpayers.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        Is there is a need to file seperately for the CGST,SGST and IGST?
+                    </div>
+
+                    <div class="content">
+                        <p>
+                            No, the return forms are common for all the three. Though there is a separate column in each, which one needs to file depending upon the inter-state and intra-state supply.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="toggle_title toggle_active">
+                        In the case of a non-resident taxable assesse what GST return have to be furnished?
+                    </div>
+                    <div class="content">
+                        <p>
+                            GSTR-5 needs to be furnished in the case of a non-resident taxable assesse. These are the suppliers that came for a short while to make supplies in India. But they don’t have a business establishment in the country. The critical headlines for GSTR-5 include:
+                            <ul>
+                                <li>GSTIN</li>
+                                <li>Import Goods</li>
+                                <li>Imported Services</li>
+                                <li>Outward supplies made</li>
+                                <li>Details of debit credit notes</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>
+
+    <section class="section-GSTReturn-contact">
+        <div class="content">
+
+        </div>
+    </section>
+
+
+   
+    <script>
+        const items = document.querySelectorAll(".accordion > .accordion-item > .toggle_title");
+
+        function toggleAccordion(){
+            this.classList.toggle('active');
+            this.nextElementSibling.classList.toggle('active');
+        }
+
+        items.forEach(item => item.addEventListener('click', toggleAccordion));
+    </script>
+</body>
+</html>
